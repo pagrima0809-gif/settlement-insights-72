@@ -8,7 +8,7 @@ const DOT: Record<string, string> = {
   neutral: "bg-brand ring-brand/15",
 };
 
-export function Timeline({ events }: { events?: TimelineEvent[] | null }) {
+export function Timeline({ events }: { events?: TimelineEvent[] | null | undefined }) {
   const items = events ?? [];
 
   return (

@@ -11,8 +11,8 @@ export function StatusBadge({
   status,
   size = "md",
 }: {
-  status?: string | null;
-  size?: "sm" | "md";
+  status?: string | null | undefined;
+  size?: "sm" | "md" | undefined;
 }) {
   const label = normalizeStatus(status);
   const tone = statusTone(status);

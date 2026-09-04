@@ -24,7 +24,7 @@ export async function investigateSettlement(
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(body),
-      signal,
+      signal: signal ?? null,
     });
   } catch {
     throw new InvestigationError(
