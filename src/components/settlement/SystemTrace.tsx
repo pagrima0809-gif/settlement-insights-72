@@ -8,8 +8,8 @@ function SystemCard({
   fallbackCurrency,
 }: {
   title: string;
-  record?: SystemRecord | null;
-  fallbackCurrency?: string | null;
+  record?: SystemRecord | null | undefined;
+  fallbackCurrency?: string | null | undefined;
 }) {
   const hasRecord = !!record && Object.keys(record).length > 0;
 
